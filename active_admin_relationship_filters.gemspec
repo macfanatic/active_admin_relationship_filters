@@ -4,8 +4,8 @@ require File.expand_path('../lib/active_admin_relationship_filters/version', __F
 Gem::Specification.new do |gem|
   gem.authors       = ["Matt Brewer"]
   gem.email         = ["matt.brewer@me.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Provides a few more filter options to ActiveAdmin allowing you to easily traverse relationships or filter on a HABTM}
+  gem.summary       = %q{Provides a few more filter options to ActiveAdmin allowing you to easily traverse relationships or filter on a HABTM}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
@@ -14,4 +14,7 @@ Gem::Specification.new do |gem|
   gem.name          = "active_admin_relationship_filters"
   gem.require_paths = ["lib"]
   gem.version       = ActiveAdminRelationshipFilters::VERSION
+  
+  gem.add_dependency "activeadmin", ">= 0.5"
+  
 end
